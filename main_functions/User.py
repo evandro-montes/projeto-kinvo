@@ -5,3 +5,9 @@ class User:
         self.date_of_birth = date_of_birth
         self.email = email
         self.password = password
+        self.wallet = {}
+
+        def see_stocks_wallet(self):
+            return self.wallet
+
+        
