@@ -1,0 +1,130 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+background: rgb(18, 29, 61);
+    background: linear-gradient(52deg, rgba(18, 29, 61, 1) 0%, rgba(47, 74, 156, 1) 27%, rgba(65, 105, 225, 1) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    /* Adiciona um tamanho máximo para o contêiner */
+    width: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+p{
+    font-size: 24px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flexbox;
+}
+
+
+#stonks{
+    width: 50px;
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    max-width: 600px;
+    /* Define um tamanho máximo para o texto do título */
+    color: white;
+    font-size: 48px;
+    /* Tamanho de fonte fixo para telas grandes */
+    margin: 40px auto;
+    /* Centraliza horizontalmente */
+}
+
+::placeholder {
+    color: white;
+}
+
+#ticker-input,
+.search {
+    align-items: center;
+    font-size: 24px;
+    /* Tamanho de fonte fixo para telas grandes */
+    padding: 14px;
+    border-radius: 50px;
+    border: 4px solid #052b9c;
+    background-color: #6b8ae8;
+    color: white;
+    outline: none;
+    margin: 0 10px;
+    /* Espaçamento simétrico para os lados */
+}
+
+#ticker-input {
+    width: 60%;
+    padding-left: 24px;
+}
+
+#ticker-input:focus {
+    border-color: white;
+    box-shadow: inset 0 0 0 3px #052b9c;
+}
+
+.search.active-state {
+    border-color: white;
+    box-shadow: inset 0 0 0 3px #052b9c;
+}
+
+.search {
+    width: 20%;
+}
+
+
+
+
+
+@media (max-width: 1350px) {
+    .container {
+        padding: 0 1%;
+        /* Reduzir o preenchimento em telas menores */
+    }
+
+    #ticker-input,
+    .search {
+        font-size: 18px;
+        /* Reduzir o tamanho da fonte em telas menores */
+        padding: 14px;
+        /* Reduzir o preenchimento em telas menores */
+        margin: 0 10px;
+        /* Reduzir a margem entre os elementos */
+    }
+
+    #ticker-input {
+        width: 60%;
+
+    }
+
+    .search {
+        flex: none;
+        /* Impedir que o botão se expanda */
+        width: auto;
+        /* Permitir que o botão se ajuste à largura disponível */
+        padding-left: 10px;
+        /* Ajustar o preenchimento */
+        padding-right: 10px;
+        /* Ajustar o preenchimento */
+    }
+}
